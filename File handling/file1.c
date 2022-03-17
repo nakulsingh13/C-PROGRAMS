@@ -1,9 +1,11 @@
 #include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 
 int main(){
     int i;
     FILE *fp;
-    char s[]="Hello students";
+    char s[100];
 
     fp=fopen("f1.txt","w");
 
@@ -12,6 +14,8 @@ int main(){
         printf("File cannot open");
         exit(1);
     }
+    printf("Enter a string ");
+    gets(s);
     for ( i = 0; i < strlen(s); i++)
     {
         fputc(s[i],fp);
