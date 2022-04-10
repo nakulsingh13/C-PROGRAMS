@@ -14,5 +14,5 @@ void fun(){
     x++;
     y++;
     printf("Y = %d\n",y);
-    printf("X = %d\n",x);
+    printf("X  = %d\n",x);
 }
